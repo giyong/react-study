@@ -8,11 +8,10 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename="https://giyong.github.io/react-study"> 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/react-study" element={<Home />} />
-        <Route path="/react-study/movie/:id" element={<Detail />} />
+        <Route path="/movie/:id" element={<Detail />} />
       </Routes>
     </Router>
   );
