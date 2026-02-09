@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes, Route
  } from "react-router-dom";
  import Home from "./routes/Home";
@@ -8,7 +8,7 @@ import {
 
 function App() {
   return (
-    <Router basename="https://giyong.github.io/react-study"> 
+    <Router> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<Detail />} />
