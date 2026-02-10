@@ -5,10 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-study">
       <Routes>
-        <Route path="/react-study" element={<Home />} />
-        <Route path="/react-study/movie/:id" element={<Detail />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   );
