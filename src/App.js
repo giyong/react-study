@@ -1,19 +1,16 @@
 import React from 'react';
-import { 
-  HashRouter as Router,
-  Routes, Route
- } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
  import Home from "./routes/Home";
  import Detail from "./routes/Detail"
 
 function App() {
   return (
-    <Router> 
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movie/:id" element={<Detail />} />
+        <Route path="/react-study" element={<Home />} />
+        <Route path="/react-study/movie/:id" element={<Detail />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
